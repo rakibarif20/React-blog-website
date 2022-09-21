@@ -1,0 +1,97 @@
+.storisCard_Main_section {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.storisCard {
+  display: flex;
+  align-items: start;
+  width: 100%;
+  margin: 0 auto;
+  padding: 30px;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    padding: 40px;
+  }
+
+  &__leftSide {
+    // flex-basis: 100%;
+    flex: 1;
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 20px;
+    @media (max-width: 768px) {
+      grid-template-columns: auto auto;
+      margin-bottom: 40px;
+    }
+    @media (max-width: 425px) {
+      grid-template-columns: auto;
+
+    }
+    div {
+      width: 350px;
+    }
+    button {
+      padding: 8px 20px;
+      background: rgb(130, 180, 64);
+      font-size: 14px;
+      line-height: 16px;
+      color: #ffffff;
+      box-shadow: rgb(111 154 55) 0px 2px 0px;
+      text-transform: uppercase;
+      cursor: pointer;
+      transition: all 0.4s ease;
+      border: none;
+      border-radius: 10px;
+      margin-right: 10px;
+
+      &:hover {
+        background-color: rgb(122, 169, 60);
+      }
+    }
+  }
+  &__rightSide {
+    // flex-basis: 100%;
+    // flex: 1;
+    display: flex;
+    align-items: stretch;
+    justify-content: start;
+    flex-direction: column;
+    // margin-left: 40px;
+
+    @media(max-width:768px){
+      margin-left: 0;
+    }
+
+    h4 {
+      margin-bottom: 4px;
+      font-size: 14px;
+      color: #000;
+      font-weight: 400;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      align-items: initial;
+    }
+    .popularPostCard {
+      width: 200px;
+      height: 150px;
+      overflow: hidden;
+    }
+    .recen-post-title {
+      @media(max-width:768px){
+        display: none;
+      }
+    }
+    .recentPost {
+      width: 100%;
+      height: 100%;
+
+      @media(max-width: 768px){
+        display: none;
+      }
+    }
+  }
+}

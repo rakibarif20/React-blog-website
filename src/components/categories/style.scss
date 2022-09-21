@@ -1,0 +1,39 @@
+.categories {
+  width: 80%;
+  margin-bottom: 20px;
+
+  &__list {
+    li {
+      border-bottom: 1px solid #eaeaea;
+
+      a {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 0;
+        font-size: 14px;
+        font-weight: 500;
+        color: #666;
+        transition: all 0.3s ease;
+
+        &:hover {
+          color: #000;
+        }
+
+        span {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          font-size: 12px;
+
+          &::before {
+            content: "(";
+          }
+          &::after {
+            content: ")";
+          }
+        }
+      }
+    }
+  }
+}

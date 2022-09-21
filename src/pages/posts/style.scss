@@ -1,0 +1,36 @@
+.posts {
+    padding: 40px;
+    background: #fff;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 20px;
+    @media (max-width: 768px) {
+      grid-template-columns: auto auto;
+      margin-bottom: 40px;
+    }
+    @media (max-width: 425px) {
+      grid-template-columns: auto;
+
+    }
+    div {
+      width: 350px;
+    }
+    button {
+      padding: 8px 20px;
+      background: rgb(130, 180, 64);
+      font-size: 14px;
+      line-height: 16px;
+      color: #ffffff;
+      box-shadow: rgb(111 154 55) 0px 2px 0px;
+      text-transform: uppercase;
+      cursor: pointer;
+      transition: all 0.4s ease;
+      border: none;
+      border-radius: 10px;
+      margin-right: 10px;
+
+      &:hover {
+        background-color: rgb(122, 169, 60);
+      }
+    }
+}

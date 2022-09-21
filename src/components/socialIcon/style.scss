@@ -1,0 +1,32 @@
+.socialIconList {
+  width: 50%;
+  margin-top: 20px;
+
+
+  @media(max-width:768px){
+    width: 100%;
+  }
+
+  &__item {
+    display: inline-block;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    padding: 6px 12px;
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    border-radius: 0.25em;
+    text-transform: uppercase;
+    color: #666;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    box-shadow: 0 1px 4px 2.5px hsl(0deg 0% 80% / 10%);
+    transition: all 0.3s ease;
+
+    &:hover {
+      background-color: #ef534f;
+      color: #fff;
+      box-shadow: 0 0 4px 5px hsl(0deg 0% 80% / 20%);
+    }
+  }
+}
